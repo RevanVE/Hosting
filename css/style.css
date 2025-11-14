@@ -213,3 +213,64 @@ body {
     opacity: 0.2;
   }
 }
+
+/* ===========================================
+   📱 RESPONSIVE MODE — HP (max-width 768px)
+=========================================== */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+    text-align: center;
+    height: auto;
+  }
+
+  .greetings {
+    font-size: 3rem;
+    /* dari 6rem → 3rem */
+    line-height: 1.2;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    /* dari 1.5rem → 1.1rem */
+    margin-bottom: 15px;
+    padding: 0 10px;
+  }
+
+  button,
+  .button a,
+  #playButton {
+    font-size: 1rem;
+    padding: 10px 25px;
+    /* lebih kecil biar muat */
+  }
+}
+
+/* ===========================================
+   📱 KHUSUS iPHONE 13 (390px width)
+=========================================== */
+@media (max-width: 420px) {
+  .greetings {
+    font-size: 2.5rem;
+    /* lebih kecil lagi biar PERFECT */
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  button,
+  .button a,
+  #playButton {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+
+  .petal,
+  .heart,
+  .sparkle {
+    width: 40px !important;
+    height: 40px !important;
+    /* efek animasi tidak nutup layar */
+  }
+}
