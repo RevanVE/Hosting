@@ -215,62 +215,76 @@ body {
 }
 
 /* ===========================================
-   📱 RESPONSIVE MODE — HP (max-width 768px)
+   📱 RESPONSIVE MODE — HP (max-width: 768px)
 =========================================== */
 @media (max-width: 768px) {
   body {
-    padding: 20px;
-    text-align: center;
     height: auto;
+    /* jangan pakai 100vh */
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    overflow-y: auto;
+    /* biar nggak kepanjangan */
   }
 
   .greetings {
-    font-size: 3rem;
-    /* dari 6rem → 3rem */
-    line-height: 1.2;
+    font-size: 2.8rem !important;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    /* tarik ke atas */
   }
 
   .description {
-    font-size: 1.1rem;
-    /* dari 1.5rem → 1.1rem */
-    margin-bottom: 15px;
-    padding: 0 10px;
+    font-size: 1.1rem !important;
+    margin-bottom: 10px;
   }
 
   button,
   .button a,
   #playButton {
-    font-size: 1rem;
-    padding: 10px 25px;
-    /* lebih kecil biar muat */
+    font-size: 1rem !important;
+    padding: 10px 24px;
+    margin-top: 8px;
+  }
+
+  /* Animasi dibikin kecil di HP */
+  .petal,
+  .heart,
+  .sparkle {
+    width: 30px !important;
+    height: 30px !important;
+    opacity: 0.7;
   }
 }
 
+
 /* ===========================================
-   📱 KHUSUS iPHONE 13 (390px width)
+   📱 KHUSUS iPHONE 13 / 12 / XR (390-414px)
 =========================================== */
 @media (max-width: 420px) {
   .greetings {
-    font-size: 2.5rem;
-    /* lebih kecil lagi biar PERFECT */
+    font-size: 2.3rem !important;
+    margin-top: -5px;
   }
 
   .description {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 
   button,
   .button a,
   #playButton {
-    font-size: 0.95rem;
-    padding: 10px 20px;
+    font-size: 0.9rem !important;
+    padding: 9px 20px;
   }
 
   .petal,
   .heart,
   .sparkle {
-    width: 40px !important;
-    height: 40px !important;
-    /* efek animasi tidak nutup layar */
+    width: 25px !important;
+    height: 25px !important;
+    opacity: 0.6;
   }
 }
