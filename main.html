@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="icon" href="img/flowers.png" type="image/x-icon" />
+    <title>Tasyapo</title>
+    <style>
+      /* CSS untuk Pop-up */
+      .popup {
+        display: none; /* Sembunyikan pop-up secara default */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #3b3b3b;
+        padding: 20px;
+        border: 3px solid #e98d38;
+        border-radius: 8px;
+        z-index: 10; /* Pastikan pop-up di atas elemen lain */
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+    </div>
+    <div class="section hidden">
+      <h1>Sebentar, sebelum kebawah.. lagu dulu ga sih?😄 </h1>
+    </div>
+    <div class="section hidden">
+      <button id="playButton"><span> <h5>Klik Disini</h5> </span></button>
+      <audio id="myAudio">
+        <source src="Src/Backsound.mp3" type="audio/mp3">
+      </audio>
+      
+      <script>
+        var audio = document.getElementById('myAudio');
+        if (sessionStorage.getItem("audioPlayed") === "true") {
+          audio.play();
+        }
+        document.getElementById('playButton').addEventListener('click', function() {
+          audio.volume = 0.9;
+          audio.play();
+          sessionStorage.setItem("audioPlayed", "true");
+        });
+      </script>
+    </div>
+    <div class="section hidden">
+      <h1>Oke udahh, lanjut..</h1>
+    </div>
+    <div class="section hidden">
+      <h1>&emsp;Haloo Tasyaa👋 <br> Scroll pelan pelan kebawah yaa😊</h1>
+    </div>
+    <div class="section hidden">
+      <h1>&emsp;Ingett, Pelan pelan okayy ahaha</h1>
+    </div>
+    <div class="section hidden">
+      <h1>I hope you're in good feel right now!🌟🌟</h1>
+    </div>
+    <div class="section hidden">
+      <p>
+        Ohh iyaa, aku mau ngomong aja sih sebenernya sih, tapi biarin aku cerita dulu yaa
+        dan aku harap kamu mau baca yaa
+      </p>
+    </div>
+    <div class="section hidden">
+      <p>
+        Awal-awal magang, aku emang sering ngeliat semua orang di ruangan sih.  
+        Dan entah kenapa, pandangan aku tuh selalu berhenti di kamu hehe.  
+        Bukan karena apa-apa… cuma ada sesuatu yang terasa beda aja
+      </p>
+    </div>
+    <div class="section hidden">
+      <p>
+        Awalnya yaudah, cuma sekadar mengagumi dari jauh.  
+        Tapi makin lama, rasanya hati aku tuh gabisa dibohongi.  
+        Perasaan itu malah nggak hilang, malah tetep sama dan masih seperti awal pertama kali aku liat kamu.
+      </p>
+    </div>
+    <div class="section hidden">
+      <p>
+        Jujur, aku nggak berani mulai apapun.  
+        Takut ganggu… takut momen-nya nggak tepat.  
+        Jadinya aku simpen perasaan itu sendiri sambil nunggu waktu yang menurutku pas, kalau memang ada😄
+      </p>
+    </div>
+    <div class="section hidden">
+      <p>
+        Sampai akhirnya hari Jumat itu, ternyata kalian terakhir KP. 
+        Pas tau ituu aku cuma bisa bilang dalam hati, “Yah… nice try…” sambil ketawa kecil
+      </p>
+    </div>
+    <div class="section hidden">
+      <p>
+        Dan dari situ aku memberanikan diri buat DM kamuu. Tapi aku sadar banget gaya chat aku waktu itu freak dan nggak jelas, 
+        makanya kamu nggak bales. Dan aku ngerti itu, bener-bener ngerti.
+      </p>
+    </div>
+    <div class="section hidden">
+      <p>
+        Tapi lucunya… meskipun waktu berjalan berbulan-bulan, perasaan aku ke kamu tuh nggak berubah sama sekali.
+        Makanya aku beraniin buat chat kamu lagi. Dan pas kamu bales… jujur, aku seneng banget.
+      </p>
+    </div>
+    <div class="section hidden">
+      <p>
+        Tapi makin lama, aku ngerasa sesuatu.. dimana cara kamu ngerespon itu pelan, hati-hati, dan kerasa kayak kamu agak keganggu.
+        Bukan marah atau jutek, cuma… vibes-nya beda. Dan aku mulai mikir “Kayaknya aku bikin kamu nggak nyaman ya…”
+        Aku nggak mau kamu ngerasa gitu. Meskipun aku suka kamu, aku tetep harus ngerti batasnya.
+      </p>
+    </div>
+    <div class="section hidden">
+      <p>
+        Jadi jujur dari hati aku, i think I have a crush on you✌️. Perasaan itu datang dari tempat yang tulus, 
+        bukan maksain, bukan berharap lebih, cuma sebuah rasa suka yang nggak hilang meskipun waktu lewat.
+      </p>
+    </div>
+    <div class="section hidden">
+      <p>
+        Tapi karena aku makin ngerasa keberadaan aku di chat bikin kamu kurang nyaman, aku mutusin buat berhenti nge-DM kamu dulu.
+        Bukan karena aku ngilang atau mendadak cuek, aku cuma nggak mau ganggu kamu terus.
+      </p>
+    </div>
+    <div class="section hidden">
+      <p>
+        Maaf ya kalau selama ini aku ganggu kamu dengan chat yang gajelas dan kepoan.
+        Aku bener-bener nggak bermaksud bikin kamu ngerasa nggak nyaman
+      </p>
+    </div>
+    <div class="section hidden">
+      <p>
+        Dan aku mau bilang <b>makasih banget…</b>
+        Makasih karena kamu masih mau bales chat aku, meskipun gaya chat aku random, freak, dan kadang gajelas.
+        Itu aku hargai banget.
+      </p>
+    </div>
+    <div class="section hidden">
+      <p>
+        Aku juga mau minta maaf kalau selama ini aku bikin kamu risih. Aku bener-bener nggak bermaksud.
+        Aku cuma orang yang lagi belajar buat lebih peka dan ngerti situasi.
+      </p>
+    </div>
+    <div class="section hidden">
+      <p>
+        Terakhir…<br>
+        semoga apapun yang kamu jalanin sekarang seperti kuliah, tugas akhir, hidup—semuanya dilancarkan. Aku tau kamu lagi bergelut dengan pikiran mu sendiri
+        dan mungkin lagi susah percaya sama apa pun, apalagi soal perasaan,
+        tapi kamu kuat. Kamu hebat. Dan kamu pantas buat ngerasain hal-hal baik ke depan nanti.
+      </p>
+    </div>
+    <div class="section hidden">
+      <p>
+        SO GOODLUCK ON YOUR JOURNEY TAS 💪🔥🔥
+      </p>
+    </div>
+    <div class="section hidden">
+      <p>
+        Please don’t be too hard on yourself. Pelan-pelan aja ya… kamu nggak harus baik-baik aja setiap hari.
+        Yang penting kamu tetap jalan, meskipun langkahnya kecil.
+      </p>
+    </div>
+    <div class="section hidden">
+      <p>
+        Semoga kamu segera nemuin ketenangan yang kamu cari,  
+        dan semoga kamu bisa bahagia lagi dengan cara yang kamu mau🙌
+      </p>
+    </div>
+    <div class="section hidden">
+      <p>I SINCERELY WISH THE BEST FOR YOU..✨. Klik tombol dibawah yaa😊</p>
+    </div>
+    <div class="section hidden">
+      <div class="button">
+        <button id="showFlowerButton">
+          Here 4 You🌠
+          <div class="star-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53">
+              <path
+                class="fil0"
+                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+              ></path>
+            </svg>
+          </div>
+          <div class="star-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53">
+              <path
+                class="fil0"
+                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+              ></path>
+            </svg>
+          </div>
+          <div class="star-3">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53">
+              <path
+                class="fil0"
+                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+              ></path>
+            </svg>
+          </div>
+          <div class="star-4">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53">
+              <path
+                class="fil0"
+                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+              ></path>
+            </svg>
+          </div>
+          <div class="star-5">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53">
+              <path
+                class="fil0"
+                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+              ></path>
+            </svg>
+          </div>
+          <div class="star-6">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784.11 815.53">
+              <path
+                class="fil0"
+                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+              ></path>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <script>
+    document.getElementById("showFlowerButton").addEventListener("click", function () {
+        const flowerSection = document.getElementById("flowerAnimationContainer");
+
+        // munculkan bunga
+        flowerSection.classList.add("show");
+
+        // AKTIFKAN animasi dari awal
+        flowerSection.classList.remove("paused");
+
+        // scroll ke bunga
+        flowerSection.scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+    </script>
+    <div id="flowerAnimationContainer" class="flower-section hidden paused">
+    <svg viewBox="0 0 500 150" width="80%" style="position: absolute; top: 2%; left: 50%; transform: translateX(-50%); z-index: 1001;">
+    <path id="curve" d="M 50,130 C 150,20 350,20 450,130" fill="transparent"/>
+
+    <symbol id="s-text">
+        <text>
+            <textPath xlink:href="#curve" startOffset="50%">Tasya Putri Olivia</textPath>
+        </text>
+    </symbol>
+
+    <g class="g-ants hidden-text">
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+        <use xlink:href="#s-text" class="text-copy"></use>
+    </g>
+</svg>
+    
+    <div class="night"></div>
+    <div class="flowers">
+      <div class="flower flower--1">
+        <div class="flower__leafs flower__leafs--1">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line">
+          <div class="flower__line__leaf flower__line__leaf--1"></div>
+          <div class="flower__line__leaf flower__line__leaf--2"></div>
+          <div class="flower__line__leaf flower__line__leaf--3"></div>
+          <div class="flower__line__leaf flower__line__leaf--4"></div>
+          <div class="flower__line__leaf flower__line__leaf--5"></div>
+          <div class="flower__line__leaf flower__line__leaf--6"></div>
+        </div>
+      </div>
+
+      <div class="flower flower--2">
+        <div class="flower__leafs flower__leafs--2">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line">
+          <div class="flower__line__leaf flower__line__leaf--1"></div>
+          <div class="flower__line__leaf flower__line__leaf--2"></div>
+          <div class="flower__line__leaf flower__line__leaf--3"></div>
+          <div class="flower__line__leaf flower__line__leaf--4"></div>
+        </div>
+      </div>
+
+      <div class="flower flower--3">
+        <div class="flower__leafs flower__leafs--3">
+          <div class="flower__leaf flower__leaf--1"></div>
+          <div class="flower__leaf flower__leaf--2"></div>
+          <div class="flower__leaf flower__leaf--3"></div>
+          <div class="flower__leaf flower__leaf--4"></div>
+          <div class="flower__white-circle"></div>
+
+          <div class="flower__light flower__light--1"></div>
+          <div class="flower__light flower__light--2"></div>
+          <div class="flower__light flower__light--3"></div>
+          <div class="flower__light flower__light--4"></div>
+          <div class="flower__light flower__light--5"></div>
+          <div class="flower__light flower__light--6"></div>
+          <div class="flower__light flower__light--7"></div>
+          <div class="flower__light flower__light--8"></div>
+        </div>
+        <div class="flower__line">
+          <div class="flower__line__leaf flower__line__leaf--1"></div>
+          <div class="flower__line__leaf flower__line__leaf--2"></div>
+          <div class="flower__line__leaf flower__line__leaf--3"></div>
+          <div class="flower__line__leaf flower__line__leaf--4"></div>
+        </div>
+      </div>
+
+      <div class="grow-ans" style="--d: 1.2s">
+    <div class="flower__g-long">
+        <div class="flower__g-long__top"></div>
+        <div class="flower__g-long__bottom"></div>
+    </div>
+</div>
+<div class="grow-ans" style="--d: 1.2s">
+    <div class="flower__g-long flower__g-long--mirrored">
+        <div class="flower__g-long__top"></div>
+        <div class="flower__g-long__bottom"></div>
+    </div>
+</div>
+
+      <div class="growing-grass">
+        <div class="flower__grass flower__grass--1">
+          <div class="flower__grass--top"></div>
+          <div class="flower__grass--bottom"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--1"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--2"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--3"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--4"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--5"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--6"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--7"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--8"></div>
+          <div class="flower__grass__overlay"></div>
+        </div>
+      </div>
+
+      <div class="growing-grass">
+        <div class="flower__grass flower__grass--2">
+          <div class="flower__grass--top"></div>
+          <div class="flower__grass--bottom"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--1"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--2"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--3"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--4"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--5"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--6"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--7"></div>
+          <div class="flower__grass__leaf flower__grass__leaf--8"></div>
+          <div class="flower__grass__overlay"></div>
+        </div>
+      </div>
+
+      <div class="grow-ans" style="--d: 2.4s">
+        <div class="flower__g-right flower__g-right--1">
+          <div class="leaf"></div>
+        </div>
+      </div>
+
+      <div class="grow-ans" style="--d: 2.8s">
+        <div class="flower__g-right flower__g-right--2">
+          <div class="leaf"></div>
+        </div>
+      </div>
+
+      <div class="grow-ans" style="--d: 2.8s">
+        <div class="flower__g-front">
+          <div
+            class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--1"
+          >
+            <div class="flower__g-front__leaf"></div>
+          </div>
+          <div
+            class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--2"
+          >
+            <div class="flower__g-front__leaf"></div>
+          </div>
+          <div
+            class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--3"
+          >
+            <div class="flower__g-front__leaf"></div>
+          </div>
+          <div
+            class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--4"
+          >
+            <div class="flower__g-front__leaf"></div>
+          </div>
+          <div
+            class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--5"
+          >
+            <div class="flower__g-front__leaf"></div>
+          </div>
+          <div
+            class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--6"
+          >
+            <div class="flower__g-front__leaf"></div>
+          </div>
+          <div
+            class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--7"
+          >
+            <div class="flower__g-front__leaf"></div>
+          </div>
+          <div
+            class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--8"
+          >
+            <div class="flower__g-front__leaf"></div>
+          </div>
+          <div class="flower__g-front__line"></div>
+        </div>
+      </div>
+
+      <div class="grow-ans" style="--d: 3.2s">
+        <div class="flower__g-fr">
+          <div class="leaf"></div>
+          <div class="flower__g-fr__leaf flower__g-fr__leaf--1"></div>
+          <div class="flower__g-fr__leaf flower__g-fr__leaf--2"></div>
+          <div class="flower__g-fr__leaf flower__g-fr__leaf--3"></div>
+          <div class="flower__g-fr__leaf flower__g-fr__leaf--4"></div>
+          <div class="flower__g-fr__leaf flower__g-fr__leaf--5"></div>
+          <div class="flower__g-fr__leaf flower__g-fr__leaf--6"></div>
+          <div class="flower__g-fr__leaf flower__g-fr__leaf--7"></div>
+          <div class="flower__g-fr__leaf flower__g-fr__leaf--8"></div>
+        </div>
+      </div>
+
+      <div class="long-g long-g--0">
+        <div class="grow-ans" style="--d: 3s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d: 2.2s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3.4s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3.6s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
+
+      <div class="long-g long-g--1">
+        <div class="grow-ans" style="--d: 3.6s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3.8s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4.2s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
+
+      <div class="long-g long-g--2">
+        <div class="grow-ans" style="--d: 4s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4.2s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4.4s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4.6s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
+
+      <div class="long-g long-g--3">
+        <div class="grow-ans" style="--d: 4s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4.2s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3.6s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
+
+      <div class="long-g long-g--4">
+        <div class="grow-ans" style="--d: 4s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4.2s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3.6s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
+
+      <div class="long-g long-g--5">
+        <div class="grow-ans" style="--d: 4s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4.2s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3.6s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
+
+      <div class="long-g long-g--6">
+        <div class="grow-ans" style="--d: 4.2s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4.4s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4.6s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d: 4.8s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
+
+      <div class="long-g long-g--7">
+        <div class="grow-ans" style="--d: 3s">
+          <div class="leaf leaf--0"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3.2s">
+          <div class="leaf leaf--1"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3.5s">
+          <div class="leaf leaf--2"></div>
+        </div>
+        <div class="grow-ans" style="--d: 3.6s">
+          <div class="leaf leaf--3"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const imgs = [
+        "img/crybaby1.png",
+        "img/crybaby2.png",
+        "img/crybaby3.png",
+        "img/crybaby4.png",
+        "img/crybaby5.png",
+        "img/crybaby6.png",
+        "img/crybaby7.png"
+      ];
+
+      // bikin 18 elemen random
+      for (let i = 0; i < 18; i++) {
+        const type = ["petal", "heart", "sparkle"][Math.floor(Math.random() * 3)];
+        const element = document.createElement("div");
+        element.classList.add(type);
+        element.style.backgroundImage = `url('${imgs[Math.floor(Math.random() * imgs.length)]}')`;
+        element.style.left = Math.random() * 100 + "vw";
+        element.style.animationDelay = Math.random() * 5 + "s";
+        document.body.appendChild(element);
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

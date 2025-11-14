@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/flowers.png" type="image/x-icon" />
+    <title>Halo Tasya</title>
+  </head>
+  <body>
+    <div class="greetings">
+      <span>H</span>
+      <span>A</span>
+      <span>L</span>
+      <span>L</span>
+      <span>O</span>
+      <br />
+      <span>T</span>
+      <span>A</span>
+      <span>S</span>
+      <span>Y</span>
+      <span>A</span>
+    </div>
+    <div class="description">
+      <span>Klik Dibawah</span>
+    </div>
+    <div class="button">
+      <button>
+        <a href="main.html">HERE</a>
+      </button>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const images = [
+          "img/crybaby1.png",
+          "img/crybaby2.png",
+          "img/crybaby3.png",
+          "img/crybaby4.png",
+          "img/crybaby5.png",
+          "img/crybaby6.png",
+          "img/crybaby7.png",
+        ];
+
+        // === FALLING (turun dari atas) ===
+        function spawnFalling() {
+          const petal = document.createElement("div");
+          petal.className = "petal";
+
+          // random gambar
+          petal.style.backgroundImage = `url('${
+            images[Math.floor(Math.random() * 7)]
+          }')`;
+
+          // random posisi
+          petal.style.left = Math.random() * 100 + "vw";
+
+          // ukuran random
+          const size = 40 + Math.random() * 40;
+          petal.style.width = size + "px";
+          petal.style.height = size + "px";
+
+          document.body.appendChild(petal);
+
+          // hapus setelah animasi selesai
+          setTimeout(() => petal.remove(), 8000);
+        }
+
+        // === FLOATING (naik ke atas) ===
+        function spawnFloating() {
+          const heart = document.createElement("div");
+          heart.className = "heart";
+
+          // random gambar
+          heart.style.backgroundImage = `url('${
+            images[Math.floor(Math.random() * 7)]
+          }')`;
+
+          // random posisi kiri
+          heart.style.left = Math.random() * 100 + "vw";
+
+          // random ukuran
+          const size = 60 + Math.random() * 50;
+          heart.style.width = size + "px";
+          heart.style.height = size + "px";
+
+          document.body.appendChild(heart);
+
+          setTimeout(() => heart.remove(), 7000);
+        }
+
+        // === SPARKLE CRYBABY ===
+        function spawnSparkle() {
+          const sparkle = document.createElement("div");
+          sparkle.className = "sparkle";
+
+          sparkle.style.backgroundImage = `url('${
+            images[Math.floor(Math.random() * 7)]
+          }')`;
+
+          sparkle.style.left = Math.random() * 100 + "vw";
+          sparkle.style.top = Math.random() * 100 + "vh";
+
+          const size = 25 + Math.random() * 30;
+          sparkle.style.width = size + "px";
+          sparkle.style.height = size + "px";
+
+          document.body.appendChild(sparkle);
+
+          setTimeout(() => sparkle.remove(), 4000);
+        }
+
+        // Interval muncul 1-1:
+        setInterval(spawnFalling, 600);
+        setInterval(spawnFloating, 900);
+        setInterval(spawnSparkle, 700);
+      });
+    </script>
+  </body>
+</html>
