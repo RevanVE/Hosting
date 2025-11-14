@@ -34,21 +34,32 @@
       <h1>Sebentar, sebelum kebawah.. lagu dulu ga sih?😄 </h1>
     </div>
     <div class="section hidden">
-      <button id="playButton"><span> <h5>Klik Disini</h5> </span></button>
-      <audio id="myAudio">
+      <button id="playButton"><span>
+          <h5>Klik Disini</h5>
+        </span></button>
+    
+      <audio id="myAudio" loop>
         <source src="Src/Backsound.mp3" type="audio/mp3">
       </audio>
-      
+    
       <script>
         var audio = document.getElementById('myAudio');
+
+        // paksa looping via javascript juga (fallback)
+        audio.loop = true;
+
+        // kalau sebelumnya sudah pernah play, auto play lagi
         if (sessionStorage.getItem("audioPlayed") === "true") {
           audio.play();
         }
-        document.getElementById('playButton').addEventListener('click', function() {
-          audio.volume = 0.9;
-          audio.play();
-          sessionStorage.setItem("audioPlayed", "true");
-        });
+
+        // tombol play
+        document.getElementById('playButton')
+          .addEventListener('click', function () {
+            audio.volume = 0.9;
+            audio.play();
+            sessionStorage.setItem("audioPlayed", "true");
+          });
       </script>
     </div>
     <div class="section hidden">
