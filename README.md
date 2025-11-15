@@ -5,7 +5,7 @@
 ---
 
 ## ❤️ **Credits**
-- Crybaby icons by: *your assets*  
+- Crybaby icons by: *popmart-inspired images*  
 - Soft pastel theme by: custom styling  
 - Made with love for: **Tasya** 🌷  
 - Created by: **Revan**  
