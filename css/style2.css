@@ -3146,36 +3146,42 @@ body {
   margin: 0;
   padding: 0;
 }
+/* --- KECILKAN RUMPUT BIAR GA GEDE --- */
+.flower__grass {
+  transform: scale(0.6);
+  /* kecil 60% dari ukuran asli */
+  transform-origin: bottom;
+  /* mengecil dari bawah */
+}
 
+/* daun rumput kecil */
+.flower__grass__leaf {
+  transform: scale(0.75);
+}
+
+/* batang rumput juga kecil */
+.flower__grass--top,
+.flower__grass--bottom {
+  transform: scale(0.7);
+}
 /* ===========================================
    🌸 KODE RESPONSIVE UNTUK HP 🌸
    (Tambahkan ini di PALING BAWAH CSS Anda)
 =========================================== */
 
 @media (max-width: 768px) {
-
   /* 1. Perbaiki Teks & Tombol */
-
   p {
-    /* Mencegah teks lebih lebar dari layar HP */
     max-width: 90vw;
-    /* Gunakan 90% lebar layar, bukan 600px */
     font-size: 1.1rem;
-    /* Sedikit perkecil font (dari 1.5rem) */
   }
 
   button {
     font-size: 20px;
-    /* Perkecil font tombol (dari 28px) */
     padding: 10px 25px;
-    /* Perkecil padding tombol */
   }
 
   /* 2. Optimalkan Animasi Latar Belakang */
-
-  /* Ini adalah optimasi PERFORMA.
-     Animasi bintang #stars sangat berat untuk HP. 
-     Menyembunyikannya akan membuat web jauh lebih lancar. */
   #stars,
   #stars2,
   #stars3,
@@ -3183,7 +3189,6 @@ body {
     display: none;
   }
 
-  /* Perkecil ukuran kelopak dan hati yang jatuh */
   .petal {
     width: 40px;
     height: 40px;
@@ -3199,30 +3204,27 @@ body {
     height: 25px;
   }
 
-  /* 3. Perbaiki Animasi Bunga di Bagian Bawah */
+  /* ===========================================
+     🌸 BAGIAN YANG KAMU MINTA: FULL BUNGA DI HP
+     =========================================== */
 
   .flower-section {
-    /* Kurangi jarak margin atas yang besar (dari 800px) */
-    margin-top: 300px;
+    margin-top: 0 !important;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
   }
 
   .flowers {
-    /* Cara termudah untuk menangani animasi kompleks seperti ini
-      adalah dengan menskalakannya (memperkecil) semuanya sekaligus.
-    */
-    transform: translateX(-50%) scale(0.7);
-    /* Skalakan jadi 70% */
-
-    /* Karena di-skalakan, kita perlu menariknya ke atas sedikit.
-      Sesuaikan nilai -60vmin ini jika kurang pas.
-    */
-    bottom: -60vmin;
+    position: absolute;
+    left: 50%;
+    bottom: -5vh;
+    transform: translateX(-50%) scale(1.35) !important;
+    transform-origin: center bottom;
   }
 
-  /* Perkecil teks "Hello World" di dalam animasi bunga */
+  /* Teks di atas bunga */
   #flowerAnimationContainer svg text {
-    font-size: 2.2rem;
-    /* Perkecil dari 3rem */
+    font-size: 2.3rem !important;
   }
-
 }
